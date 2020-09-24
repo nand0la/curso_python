@@ -18,12 +18,11 @@
 #     print('A repeticao acabou')
 
 
-texto = 'Fernando'
+texto = "Fernando"
 
 i = 0
-nova_frase = ''
+nova_frase = ""
 while i < len(texto):
     nova_frase += texto[i]
     print(nova_frase)
     i += 1
-
