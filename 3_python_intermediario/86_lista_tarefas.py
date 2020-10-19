@@ -1,44 +1,49 @@
 lista_tarefa = []
 
-def insert_tarefa():
-    print()
-    tarefa = input('Digite sua tarefa: ')
+def add_tarefa(tarefa):
     lista_tarefa.append(tarefa)
 
+
+def remover_tarefa():
+    lista_tarefa.pop()
+
+
 def listar_tarefa():
-    for i in lista_tarefa:
-        print(i)
+    print(lista_tarefa)
 
-def refazer_tarefa():
-    lista_tarefa.pop()
-    input_tarefa_refeita = input('Reescreva a tarefa: ')
-    lista_tarefa.append(input_tarefa_refeita)
 
-def apagar_tarefa():
+def refazer_tarefa(nova_tarefa):
     lista_tarefa.pop()
-    
-# logica
+    lista_tarefa.append(nova_tarefa)
+
 
 while True:
     print()
-    input_tarefa = input('Deseja inserir uma terefa? [s] [n] ')
-    if input_tarefa.lower() == 's':
-        insert_tarefa()
+    input_add_tarefa = input('Deseja adicionar tarefa? [s] [n] ')
+    
+    if input_add_tarefa.lower() == 's':
+        print()
+        input_nova_tarefa = input('Digite sua tarefa: ')
+        add_tarefa(input_nova_tarefa)
         listar_tarefa()
 
-    
-    if len(lista_tarefa) != 0:
-        print()
-        input_refazer = input('Deseja refazer a ultima tarefa? [s] [n] ')
 
-        if input_refazer.lower() == 's':
-            refazer_tarefa()
+    if len(lista_tarefa) > 0:
+        print()
+        input_remover_tarefa = input('Deseja remover tarefa? [s] [n] ')
+
+        if input_remover_tarefa.lower() == 's':
+            remover_tarefa()
             listar_tarefa()
 
+        
         print()
-        input_excluir = input('Deseja excluir a ultima tarefa? [s] [n] ')
-
-        if input_excluir.lower() == 's':
-            apagar_tarefa()
+        input_refazer_tarefa = input('Deseja refazer tarefa? [s] [n] ')
+        
+        if input_refazer_tarefa.lower() == 's':
+            print()
+            input_tarefa_refeita = input('Reescreva a tarefa: ')
+            refazer_tarefa(input_tarefa_refeita)
             listar_tarefa()
+
 
