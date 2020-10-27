@@ -1,4 +1,8 @@
-# associacao
+"""
+    associação, um elemento n necessita do outro
+"""
+
+
 class Escritor:
     def __init__(self, nome):
         self.__nome = nome
