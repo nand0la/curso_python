@@ -1,5 +1,5 @@
 """
-    classes abstratas são classes genericas
+    classes abstratas são classes genericas que não podem ser instanciadas
     ex.:
 
     Cliente
@@ -12,4 +12,4 @@ from classes.contapoupanca import ContaPoupanca
 
 conta1 = ContaPoupanca(11111, 22222, 33333)
 conta1.sacar(100)
-print(conta1.saldo)
+print(conta1.saldo) 
