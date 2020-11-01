@@ -6,7 +6,7 @@
 
 class Produto:
     def __init__(self, nome, preco):
-        self.nome = nome
+        self._nome = nome
         self.preco = preco
 
     # getter -> nome da funcao tem que ter o nome do que precisa ser retornado
