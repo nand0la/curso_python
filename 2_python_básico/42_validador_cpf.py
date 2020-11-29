@@ -18,9 +18,6 @@ primeiro_digito = 11 - (soma_primeiro_valor % 11)
 primeiro_valor_final = primeiro_digito if primeiro_digito <= 9 else 0
 
 print(primeiro_valor_final)
-
-
-
 # gerando segundo valor
 multiplicador2 = 11
 soma_segundo_valor = 0
