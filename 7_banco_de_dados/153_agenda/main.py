@@ -36,6 +36,6 @@ if __name__ == "__main__":
     agenda1.insert_contato("Ana", "412312")
     agenda1.insert_contato("Julie", "654456")
 
-    agenda1.update_contate(1, "Jose", "4324355")
+    agenda1.listar()
 
     agenda1.fechar()
