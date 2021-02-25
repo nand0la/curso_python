@@ -5,7 +5,14 @@
     a leitura do codigo para outros desenvolvedores
 """
 
-from typing import List, Tuple, Dict, Any, Union, Sequence
+from typing import (
+    List, 
+    Tuple, 
+    Dict, 
+    Any, 
+    Union, 
+    Sequence
+)
 
 # Tipos primitivos
 inteiro: int = 10
