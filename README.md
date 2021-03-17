@@ -1,5 +1,5 @@
 <center>
-    <img width="100" src="https://www.python.org/static/img/python-logo@2x.png">
+    <img width="100%" src="https://www.python.org/static/img/python-logo@2x.png">
 </center>
 
 <h1 align="Center">Curso Python Completo</h1>
