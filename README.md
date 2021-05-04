@@ -11,7 +11,7 @@
 - [x] Python Básico
 - [x] Python Intermediário
 - [x] Python e POO
-- [ ] Python e Módulos uteis
+- [x] Python e Módulos uteis
 - [ ] PyQT5
 - [x] Base de Dados com Python
 - [x] Django Básico
