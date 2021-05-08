@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+header {
+    text-align: center;
+}
+
+header.navbar {
+    padding: 20px;
+    margin-bottom: 20px;
+    color: white;
+    background-color: blueviolet;
+}
+
+nav.navlink ul {
+    display: flex;
+    list-style: none;
+}
+
+nav.navlink ul li a{
+    padding: 0 20px;
+    color: white;
+}
