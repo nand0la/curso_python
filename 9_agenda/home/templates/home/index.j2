@@ -1,0 +1,34 @@
+{% extends 'base.j2' %}
+{% load static %}
+
+{% block 'title' %} home {% endblock %} 
+
+{% block 'style-link' %}
+    <link href=" {% static 'style/contatos.css' %} " rel="stylesheet">
+{% endblock %}
+
+{% block 'content' %}
+    <div class="center">
+        <div id="contatos-box">
+            <h1> CONTATOS </h1>
+            <p>
+                Minions ipsum gelatooo uuuhhh para tú bappleees para tú tank yuuu! Gelatooo po kass. 
+                Bappleees poopayee tulaliloo pepete belloo! Wiiiii. Baboiii hana dul sae bappleees pepete 
+                hana dul sae po kass po kass baboiii. Belloo! hahaha baboiii poopayee hahaha belloo! La 
+                bodaaa bee do bee do bee do chasy. Pepete poopayee tank yuuu! Butt la bodaaa wiiiii aaaaaah 
+                ti aamoo! Poulet tikka masala. Tatata bala tu daa ti aamoo! Poulet tikka masala poopayee 
+                wiiiii bappleees hana dul sae ti aamoo! Jeje belloo!
+            </p>
+
+            <br>
+
+            {% for contato in contatos %}
+                <div class="box-contato">
+                    <h1> {{contato.nome}} {{contato.sobrenome}} </h1>
+                    <h3> {{contato.telefone}} </h3>
+                    <h3> ver mais sobre: <a href=" {% url 'ver_contato' contato.id_contato %} "> clique aqui </a> </h3>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+{% endblock %}
