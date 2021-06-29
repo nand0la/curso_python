@@ -12,7 +12,7 @@
 - [x] Python Intermediário
 - [x] Python e POO
 - [x] Python e Módulos uteis
-- [ ] PyQT5
+- [x] PyQT5
 - [x] Base de Dados com Python
 - [x] Django Básico
 - [ ] Projeto Agenda
